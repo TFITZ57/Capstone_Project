@@ -50,3 +50,10 @@ Welcome to the Crypto Trading Algo Bot! This bot is designed to help you automat
 3. Set the position size and ensure the bot operates within a 3% risk tolerance parameter.
 
 
+### Project 3: Cryptocurrency Trading Algorithm Model Proposal: https://docs.google.com/document/d/1FoKmY_MA145YLXBN9Ot4ItV62mT_-kewTpmTO9eXahc/edit#heading=h.z5z7j71mgzxq
+
+
+
+
+
+
