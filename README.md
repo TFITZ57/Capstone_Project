@@ -7,7 +7,7 @@ The Crypto Trading Algo Bot is an advanced automated trading tool designed to st
 
 ### Key Features:
 
-1. **Liquidity Pool Integration**:
+1. **Exchange Integration**:
    - Seamlessly integrates with platforms like Uniswap to create and manage liquidity pools.
    - Supports a diverse list of tradable coins, ensuring broad market access.
 
