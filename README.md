@@ -49,5 +49,4 @@ Welcome to the Crypto Trading Algo Bot! This bot is designed to help you automat
 2. Configure the bot to detect buy, sell, and hold signals using the algorithmic trading model.
 3. Set the position size and ensure the bot operates within a 3% risk tolerance parameter.
 
-Happy trading! For detailed instructions and troubleshooting, please refer to the documentation or contact support.
 
