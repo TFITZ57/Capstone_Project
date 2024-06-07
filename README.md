@@ -196,6 +196,94 @@ For detailed instructions and troubleshooting, please refer to the provided docu
 
 
 
+## SMART CONTRACTS EXPLAINED:
 
+### TradingPlatform: 
+contract manages user deposits, preferences, and interactions with bot contracts. It provides functions for:
 
+	•	Adding bot contracts.
+	•	Connecting user wallets.
+	•	Depositing and withdrawing funds.
+	•	Setting trading preferences.
+	•	Executing trades via bot contracts.
+	•	Collecting fees by the contract owner.
 
+   This modular approach allows for scalable and flexible trading operations, enabling easy addition of new bot contracts and user-specific trading         configurations.
+
+    State Variables:
+	•	owner: Address of the contract owner.
+	•	usdt: Instance of the USDT token.
+	•	feePercentage: Fee percentage for using the platform (default is 1%).
+	•	User: Struct to store user preferences and balances.
+	•	users: Mapping from user address to User struct.
+	•	bots: Array of addresses of bot contracts.
+    Events:
+	•	Deposit: Emitted when a user deposits funds.
+	•	Withdraw: Emitted when a user withdraws funds.
+	•	TradeExecuted: Emitted when a trade is executed.
+    Modifiers:
+	•	onlyOwner: Restricts function access to the contract owner.
+    Constructor:
+	•	Initializes the contract with the USDT token address and sets the contract owner.
+    Functions:
+      1. addBot:
+      •	Adds a new bot contract to the platform.
+      •	Function Signature: function addBot(address bot) external onlyOwner
+      2.	connectWallet:
+      •	Marks a user’s wallet as active, allowing them to interact with the platform.
+      •	Function Signature: function connectWallet() external
+      3.	deposit:
+      •	Allows users to deposit funds (either USDT or a specific coin) into the platform.
+      •	Function Signature: function deposit(uint amount, bool isUSDT) external
+      4.	setPreferences:
+      •	Allows users to set their trading preferences.
+      •	Function Signature: function setPreferences(address coin, uint maxPositionSize, uint riskTolerance, uint stopLoss) external
+      5.	executeTrade:
+      •	Executes a trade using a specified bot.
+      •	Function Signature: function executeTrade(address bot, string calldata action, uint amount) external
+      6.	isBot:
+      •	Checks if an address is a valid bot contract (internal function).
+      •	Function Signature: function isBot(address bot) internal view returns (bool)
+      7.	withdraw:
+      •	Allows users to withdraw their funds (either USDT or a specific coin) from the platform.
+      •	Function Signature: function withdraw(uint amount, bool isUSDT) external
+      8.	collectFees:
+      •	Allows the owner to collect fees from the contract.
+      •	Function Signature: function collectFees() external onlyOwner
+      9.	receive:
+      •	Allows the contract to receive Ether.
+      •	Function Signature: receive() external payable
+      
+### TradingBot 
+contract interacts with the Uniswap router to execute buy and sell trades based on the user’s preferences stored in the main TradingPlatform contract. The contract includes the following functions:
+
+   	1.	Constructor:
+   	•	Initializes the contract with the Uniswap router and the main trading platform contract addresses.
+   	2.	executeTrade:
+   	•	Executes a trade based on the provided action (“buy” or “sell”) and amount.
+   	3.	buy:
+   	•	Executes a buy trade on Uniswap.
+   	4.	sell:
+   	•	Executes a sell trade on Uniswap.
+   	5.	receive:
+   	•	Allows the contract to receive Ether.
+    
+This structure allows for a modular and scalable trading system where new bots can be added independently, each implementing their own trading logic.
+
+### BotFactory:
+contract allows for the dynamic creation of TradingBot instances. This factory pattern enables the scalable deployment and management of multiple trading bots. The contract includes:
+
+	1.	State Variables:
+	•	owner: The owner of the factory contract.
+	•	router: The Uniswap router address.
+	•	platform: The main trading platform contract address.
+	2.	Events:
+	•	BotCreated: Emitted when a new bot instance is created.
+	3.	Modifiers:
+	•	onlyOwner: Ensures only the owner can call certain functions.
+	4.	Constructor:
+	•	Initializes the contract with the router and platform addresses and sets the owner.
+	5.	createBot:
+	•	Creates a new TradingBot instance and emits the BotCreated event.
+
+This factory pattern is beneficial for managing multiple instances of trading bots, making the system modular and scalable. 
