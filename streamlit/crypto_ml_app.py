@@ -39,9 +39,21 @@ def main():
     plt.legend()
     st.pyplot(plt)
 
-    # Add an image
-    # st.subheader("Sample Cryptocurrency Image")
-    # st.image("path/to/your/image.jpg", caption="Cryptocurrency", use_column_width=True)
+    # Display PNG images
+    st.subheader("Model Evaluation Plots")
+    st.image("plots/class_distributions_balanced.png", caption="Plot 1: Balenced", use_column_width=True)
+    st.image("plots/class_distributions_initial.png", caption="Plot 2: Initial", use_column_width=True)
+    st.image("plots/hyperband_1_calibration_curve.png", caption="Plot 3: Calibration Curve", use_column_width=True)
+    st.image("plots/hyperband_1_class_accuracy.png", caption="Plot 1: Class Accuracy", use_column_width=True)
+    st.image("plots/label_distribution.png", caption="Plot 1: Label Distribution", use_column_width=True)
+    st.image("plots/hyperband_1_confusion_matrix.png", caption="Plot 2: Confusion Matrix", use_column_width=True)
+    st.image("plots/hyperband_1_precision_recall_curve.png", caption="Plot 3: Precision Recall Curve", use_column_width=True)
+    st.image("plots/hyperband_1_roc_curve.png", caption="Plot 1: ROC Curve", use_column_width=True)
+    st.image("plots/hyperband_1_training_accuracy_loss.png", caption="Plot 2: Training Accuracy", use_column_width=True)
+    st.image("plots/Screenshot 2024-06-12 at 1.07.39 AM.png", caption="Plot 2: Training Accuracy", use_column_width=True)
+   
+    st.image("plots/model_graph.png", caption="Plot 3: Model Graph", use_column_width=True)
+
 
 if __name__ == "__main__":
     main()
