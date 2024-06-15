@@ -1,28 +1,29 @@
-# Capstone_Project
-# Crypto Trading Algo Bot
+# Capstone_Project: Revitalizing Capstone Research & Investment Company's Trading System
+# Leverage Advanced AI Models for Enhanced Crypto Trading Success
 
 ## Table of Contents
 1. [Executive Summary](#executive-summary)
-2. [Getting Started](#getting-started)
+2. [Intorduction](#introduction)
+3. [Getting Started](#getting-started)
    - [Step 1: Setting Up Exchange](#step-1-setting-up-exchange)
    - [Step 2: Connecting to the Bot](#step-2-connecting-to-the-bot)
    - [Step 3: Configuring the Bot](#step-3-configuring-the-bot)
-3. [Key Features](#key-features)
+4. [Key Features](#key-features)
    - [Exchange Integration](#exchange-integration)
    - [User-Friendly Setup](#user-friendly-setup)
    - [Advanced Trading Configuration](#advanced-trading-configuration)
-4. [Benefits](#benefits)
+5. [Benefits](#benefits)
    - [Efficiency](#efficiency)
    - [Accuracy](#accuracy)
    - [Security](#security)
    - [Risk Management](#risk-management)
-5. [Support and Documentation](#support-and-documentation)
-6. [On-Chain vs Off-Chain](#on-chain-vs-off-chain)
-7. [Smart Contracts Explained](#smart-contracts-explained)
+6. [Support and Documentation](#support-and-documentation)
+7. [On-Chain vs Off-Chain](#on-chain-vs-off-chain)
+8. [Smart Contracts Explained](#smart-contracts-explained)
    - [TradingPlatform](#tradingplatform)
    - [TradingBot](#tradingbot)
    - [BotFactory](#botfactory)
-8. [Detailed Project Plan](#detailed-project-plan)
+9. [Detailed Project Plan](#detailed-project-plan)
    - [Project Overview](#project-overview)
    - [Project Timeline](#project-timeline)
    - [Project Team Roles](#project-team-roles)
@@ -33,6 +34,8 @@
 
 ## Executive Summary
 The Crypto Trading Algo Bot is an advanced automated trading tool designed to streamline and enhance your cryptocurrency trading experience. Leveraging sophisticated algorithmic trading models, this bot allows users to efficiently manage trades and maximize returns while minimizing risk.
+
+## Introduction 
 
 ## Getting Started
 
