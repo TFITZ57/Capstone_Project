@@ -12,7 +12,6 @@
    - [Exchange Integration](#exchange-integration)
    - [User-Friendly Setup](#user-friendly-setup)
    - [Advanced Trading Configuration](#advanced-trading-configuration)
-   -
 5.[Streamlit Application](#streamlit-appliction)
 6. [Benefits](#benefits)
    - [Efficiency](#efficiency)
