@@ -35,10 +35,11 @@
 ## Executive Summary
 The Crypto Trading Algo Bot is an advanced automated trading tool designed to streamline and enhance your cryptocurrency trading experience. Leveraging sophisticated algorithmic trading models, this bot allows users to efficiently manage trades and maximize returns while minimizing risk.
 
-## Introduction 
+## Introduction
+
 
 ## Getting Started
-
+---
 ### Step 1: Setting Up Exchange
 1. Utilize platforms like Uniswap to set up and manage exchanges.
 2. Select the list of coins you wish to trade and ensure they are supported on the exchange.
