@@ -260,7 +260,7 @@ The `BotFactory` contract allows for the dynamic creation of TradingBot instance
 
 This factory pattern is beneficial for managing multiple instances of trading bots, making the system modular and scalable.
 ## Cryptocurrency Trading Process Flow
-![Visual Flowchart](path/to/image.png)
+![diagram (1)](https://github.com/TFITZ57/Capstone_Project/assets/154120290/503ada65-8178-4cee-be60-d11fae74ed08)
 
 ## Components
 
