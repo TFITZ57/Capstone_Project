@@ -26,7 +26,9 @@
    - [TradingPlatform](#tradingplatform)
    - [TradingBot](#tradingbot)
    - [BotFactory](#botfactory)
-10. [Detailed Project Plan](#detailed-project-plan)
+  
+10. [Cryptocurrency Trading Process Flow](#cryptocurrency-trading-process-flow)
+11. [Detailed Project Plan](#detailed-project-plan)
 
 - [Project Overview](#project-overview)
 - [Project Timeline](#project-timeline)
@@ -257,6 +259,7 @@ The `BotFactory` contract allows for the dynamic creation of TradingBot instance
    - Creates a new TradingBot instance and emits the BotCreated event.
 
 This factory pattern is beneficial for managing multiple instances of trading bots, making the system modular and scalable.
+## Cryptocurrency Trading Process Flow
 
 ## Detailed Project Plan
 
