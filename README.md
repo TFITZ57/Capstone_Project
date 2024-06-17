@@ -260,7 +260,127 @@ The `BotFactory` contract allows for the dynamic creation of TradingBot instance
 
 This factory pattern is beneficial for managing multiple instances of trading bots, making the system modular and scalable.
 ## Cryptocurrency Trading Process Flow
+![Visual Flowchart](path/to/image.png)
 
+## Components
+
+### Colab_MLP Model
+- **Data Ingestion:**
+    - Collects data from blockchain activity and market data.
+    - Ensures secure and accessible data storage.
+- **Data Preprocessing:**
+    - Cleans, normalizes, and balances the dataset.
+- **Feature Engineering:**
+    - Generates and selects relevant features.
+- **Hyperparameter Tuning:**
+    - Uses Hyperband, RandomSearch, and Bayesian Optimization.
+- **Model Training:**
+    - Builds, trains, and validates the model.
+    - Uses cross-validation and epoch validation.
+- **Model Evaluation:**
+    - Assesses performance using accuracy, precision, recall, F1 score.
+    - Visualizes performance with classification reports, confusion matrix, ROC curve, and AUC score.
+- **Prediction:**
+    - Generates buy, sell, hold predictions.
+    - Labels trades using a forward and backward window strategy.
+
+### Integration with ALGO Bot
+- **Automates trade commands based on model predictions.**
+
+### User Interface
+- **User Interaction:**
+    - Wallet connection and setting trading preferences.
+    - Provides a dashboard for viewing results and performance.
+- **Alerts:**
+    - Notifies users of buy, sell, or hold actions.
+- **Feedback Loop:**
+    - Collects user feedback for continuous improvement.
+
+### ALGO Bot
+- **Trade Execution:**
+    - Executes trades based on Colab_MLP Model predictions.
+- **Integration with Exchanges:**
+    - Connects with centralized and decentralized exchanges.
+
+### Simulations (Strategy Results)
+- **User Interaction:**
+    - Allows users to set simulation parameters.
+- **Strategy Testing:**
+    - Runs simulations using historical data and model predictions.
+- **Results Visualization:**
+    - Displays potential profits and losses from simulations.
+
+## Detailed Flow of the Process
+
+### Colab_MLP Model
+#### Data Ingestion
+Collects data from blockchain activity and market data. Ensures secure and accessible data storage.
+
+#### Data Preprocessing
+Cleans, normalizes, and balances the dataset.
+
+#### Feature Engineering
+Generates and selects relevant features.
+
+#### Hyperparameter Tuning
+Uses Hyperband, RandomSearch, and Bayesian Optimization.
+
+#### Model Training
+Builds, trains, and validates the model. Uses cross-validation and epoch validation.
+
+#### Model Evaluation
+Assesses performance using accuracy, precision, recall, F1 score. Visualizes performance with classification reports, confusion matrix, ROC curve, and AUC score.
+
+#### Prediction
+Generates buy, sell, hold predictions. Labels trades using a forward and backward window strategy.
+
+### Integration with ALGO Bot
+Automates trade commands based on model predictions.
+
+### User Interface
+#### User Interaction
+Wallet connection and setting trading preferences. Provides a dashboard for viewing results and performance.
+
+#### Alerts
+Notifies users of buy, sell, or hold actions.
+
+#### Feedback Loop
+Collects user feedback for continuous improvement.
+
+### ALGO Bot
+#### Trade Execution
+Executes trades based on Colab_MLP Model predictions.
+
+#### Integration with Exchanges
+Connects with centralized and decentralized exchanges.
+
+### Simulations (Strategy Results)
+#### User Interaction
+Allows users to set simulation parameters.
+
+#### Strategy Testing
+Runs simulations using historical data and model predictions.
+
+#### Results Visualization
+Displays potential profits and losses from simulations.
+
+## Visual Flow Chart Explanation
+
+1. **Data Ingestion:** Collect data from various sources.
+2. **Data Preprocessing:** Clean, normalize, and prepare data.
+3. **Feature Engineering:** Create and select features.
+4. **Hyperparameter Tuning:** Optimize model parameters.
+5. **Model Training:** Train and validate the model.
+6. **Model Evaluation:** Evaluate using metrics and visualizations.
+7. **Prediction:** Generate actionable predictions.
+8. **Output to ALGO Bot:** Send predictions to ALGO Bot.
+9. **User Interface:** Users connect wallets, set preferences, view results.
+10. **Alerts:** Notify users of trading actions.
+11. **Feedback Loop:** Collect user feedback.
+12. **ALGO Bot:** Execute trades and interface with exchanges.
+13. **Simulations:** Test strategies with historical data.
+14. **Strategy Testing:** Evaluate different strategies.
+15. **Results Visualization:** Show simulation results to users.
 ## Detailed Project Plan
 
 ### Project Overview
