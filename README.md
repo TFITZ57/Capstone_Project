@@ -41,6 +41,9 @@
 
 The Crypto Trading Algo Bot is an advanced automated trading tool designed to streamline and enhance your cryptocurrency trading experience. Leveraging sophisticated algorithmic trading models, this bot allows users to efficiently manage trades and maximize returns while minimizing risk.
 
+## Visual of what this model looks like
+![image](https://github.com/TFITZ57/Capstone_Project/assets/154120290/cea07618-a6d8-48ba-8db1-382614e4ec78)
+
 ## Introduction
 
 ## Getting Started
