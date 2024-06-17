@@ -25,11 +25,9 @@
 9. [Smart Contracts Explained](#smart-contracts-explained)
    - [TradingPlatform](#tradingplatform)
    - [TradingBot](#tradingbot)
-   - [BotFactory](#botfactory)
-  
+   - [BotFactory](#botfactory)  
 10. [Cryptocurrency Trading Process Flow](#cryptocurrency-trading-process-flow)
 11. [Detailed Project Plan](#detailed-project-plan)
-
 - [Project Overview](#project-overview)
 - [Project Timeline](#project-timeline)
 - [Project Team Roles](#project-team-roles)
@@ -45,6 +43,35 @@ The Crypto Trading Algo Bot is an advanced automated trading tool designed to st
 ![image](https://github.com/TFITZ57/Capstone_Project/assets/154120290/cea07618-a6d8-48ba-8db1-382614e4ec78)
 
 ## Introduction
+### Capstone Research & Investment Company: Challenges and Solutions
+
+Capstone Research & Investment Company is facing significant challenges in the cryptocurrency trading market, marked by a decline in market share and increased competition. 
+
+To address these challenges, Capstone Research has tasked its Technology Team with the development and advancement of an innovative trading system to regain its competitive edge and improve market positioning.
+
+### Objective
+
+Outline a plan to develop an integrated trading system that leverages AI and ML to improve trading success, increase market share, and minimize risk.
+
+#### Targets / Key Performance Indicators
+
+- Increase trading success rate by 20%.
+- Reduce trading risk by 15%.
+- Improve overall system performance and reliability.
+
+#### Outcome
+
+##### Integrated System
+Development of a comprehensive trading system that utilizes a multi-layer perceptron (MLP) model, trained on every USDT market pair offered by the Binance Exchange.
+
+#### Key Components
+
+- **MLP Model:**
+  - Provides advanced predictive signals for a broad range of assets and market trends.
+
+- **ALGO Bot:**
+  - Executes trades on both centralized and decentralized exchanges.
+
 
 ## Getting Started
 
@@ -83,7 +110,6 @@ The Crypto Trading Algo Bot is an advanced automated trading tool designed to st
 
 - Allows the bot to operate in an idle state initially, enabling comprehensive market data analysis.
 - Utilizes a powerful algorithmic trading model to generate precise buy, sell, and hold signals.
-- Enables customization of position sizes and enforces a strict 3% risk tolerance to safeguard investments.
 
 ## Benefits
 
