@@ -295,53 +295,88 @@ This factory pattern is beneficial for managing multiple instances of trading bo
 ## Cryptocurrency Trading Process Flow
 ![diagram (1)](https://github.com/TFITZ57/Capstone_Project/assets/154120290/503ada65-8178-4cee-be60-d11fae74ed08)
 
+# Cryptocurrency Trading Process Flow
+
+This repository details the process of developing and deploying a cryptocurrency trading model using machine learning.
+
 ## Components
+- **Colab_MLP Model**
+- **ALGO Bot**
+- **User Interface**
+- **Simulations (Strategy Results)**
 
-### Colab_MLP Model
-- **Data Ingestion:**
-    - Collects data from blockchain activity and market data.
-    - Ensures secure and accessible data storage.
-- **Data Preprocessing:**
-    - Cleans, normalizes, and balances the dataset.
-- **Feature Engineering:**
-    - Generates and selects relevant features.
-- **Hyperparameter Tuning:**
-    - Uses Hyperband, RandomSearch, and Bayesian Optimization.
-- **Model Training:**
-    - Builds, trains, and validates the model.
-    - Uses cross-validation and epoch validation.
-- **Model Evaluation:**
-    - Assesses performance using accuracy, precision, recall, F1 score.
-    - Visualizes performance with classification reports, confusion matrix, ROC curve, and AUC score.
-- **Prediction:**
-    - Generates buy, sell, hold predictions.
-    - Labels trades using a forward and backward window strategy.
+## Detailed Flow of the Process
 
-### Integration with ALGO Bot
-- **Automates trade commands based on model predictions.**
+### 1. Colab_MLP Model
 
-### User Interface
-- **User Interaction:**
-    - Wallet connection and setting trading preferences.
-    - Provides a dashboard for viewing results and performance.
-- **Alerts:**
-    - Notifies users of buy, sell, or hold actions.
-- **Feedback Loop:**
-    - Collects user feedback for continuous improvement.
+#### a. Data Ingestion
+- **Sources:** Collect data from blockchain activity, market data, etc.
+- **Storage:** Securely store data and ensure accessibility.
 
-### ALGO Bot
-- **Trade Execution:**
-    - Executes trades based on Colab_MLP Model predictions.
-- **Integration with Exchanges:**
-    - Connects with centralized and decentralized exchanges.
+#### b. Data Preprocessing
+- **Cleaning:** Handle missing values, remove noise, correct inconsistencies.
+- **Normalization:** Scale data for consistent input.
+- **SMOTE:** Balance the dataset by oversampling the minority class.
+- **Random Undersampling and Oversampling.**
 
-### Simulations (Strategy Results)
-- **User Interaction:**
-    - Allows users to set simulation parameters.
-- **Strategy Testing:**
-    - Runs simulations using historical data and model predictions.
-- **Results Visualization:**
-    - Displays potential profits and losses from simulations.
+#### c. Feature Engineering
+- **Creation:** Generate new features to improve model performance.
+- **Selection:** Choose relevant features to reduce dimensionality and improve efficiency.
+
+#### d. Hyperparameter Tuning
+- **Hyperband:** Efficient hyperparameter optimization.
+- **RandomSearch:** Explore a wide range of hyperparameter settings.
+- **Bayesian Optimization:** Fine-tune an existing model.
+
+#### e. Model Training
+- **Architecture:** Build the model using the best hyperparameters.
+- **Training:** Train on the entire dataset to learn patterns.
+- **Validation:** Validate model performance with a separate dataset.
+- **Cross-Validation:** Use strategies like k-fold to ensure robustness.
+
+#### f. Model Evaluation
+- **Metrics:** Evaluate using accuracy, precision, recall, F1 score.
+- **Visualization:** Use classification reports, confusion matrix, ROC curve, and AUC score.
+
+#### g. Prediction
+- **Labeling Algorithm:** Calculate buy, sell, hold labels based on returns.
+- **Softmax Activation:** Generate probabilistic outcomes.
+- **Actionable Predictions:** Output predictions for buy (1), sell (2), hold (0).
+
+#### h. Integration with ALGO Bot
+- **Automated Trade Commands:** Feed predictions into the algorithm to trigger actions.
+
+### 2. User Interface
+
+#### a. User Interaction
+- **Wallet Connection:** Enable deposits and interactions.
+- **Preferences:** Set trading preferences and strategies.
+- **Results View:** Display trading results and performance metrics.
+
+#### b. Alerts
+- **Notifications:** Alert users of buy, sell, or hold positions.
+
+#### c. Feedback Loop
+- **User Feedback:** Collect feedback to improve system performance.
+
+### 3. ALGO Bot
+
+#### a. Trade Execution
+- **Execution:** Execute trades based on Colab_MLP Model predictions.
+
+#### b. Integration with Exchanges
+- **Interfaces:** Connect with centralized and decentralized exchanges.
+
+### 4. Simulations (Strategy Results)
+
+#### a. User Interaction
+- **Preferences:** Set simulation parameters and view results.
+
+#### b. Strategy Testing
+- **Simulations:** Test different trading strategies using historical data.
+
+#### c. Results Visualization
+- **Visualization:** Display potential profits and losses from simulations.
 
 ## Visual Flow Chart Explanation
 
@@ -350,16 +385,17 @@ This factory pattern is beneficial for managing multiple instances of trading bo
 3. **Feature Engineering:** Create and select features.
 4. **Hyperparameter Tuning:** Optimize model parameters.
 5. **Model Training:** Train and validate the model.
-6. **Model Evaluation:** Evaluate using metrics and visualizations.
+6. **Model Evaluation:** Evaluate performance with metrics and visualizations.
 7. **Prediction:** Generate actionable predictions.
-8. **Output to ALGO Bot:** Send predictions to ALGO Bot.
-9. **User Interface:** Users connect wallets, set preferences, view results.
+8. **Output to ALGO Bot:** Send predictions to ALGO Bot for trade execution.
+9. **User Interface:** Enable user interaction, wallet connection, and result viewing.
 10. **Alerts:** Notify users of trading actions.
 11. **Feedback Loop:** Collect user feedback.
-12. **ALGO Bot:** Execute trades and interface with exchanges.
-13. **Simulations:** Test strategies with historical data.
+12. **ALGO Bot:** Execute trades and connect with exchanges.
+13. **Simulations:** Run strategy tests using historical data.
 14. **Strategy Testing:** Evaluate different strategies.
-15. **Results Visualization:** Show simulation results to users.
+15. **Results Visualization:** Display simulation results showing potential profits and losses.
+
 ## Detailed Project Plan
 
 ### Project Overview
