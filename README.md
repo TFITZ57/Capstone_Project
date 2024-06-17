@@ -263,10 +263,6 @@ This structure allows for a modular and scalable trading system where new bots c
 ### BotFactory
 
 The `BotFactory` contract allows for the dynamic creation of TradingBot instances. This factory pattern enables the scalable deployment and management of multiple trading bots. The contract includes:
-### Balanced Distribution 
-![class_distributions_balanced](https://github.com/TFITZ57/Capstone_Project/assets/154120290/4b723b4e-0ce5-45eb-a914-d6a50bde3afb)
-### Initial Distribution of Classes 
-![class_distributions_initial](https://github.com/TFITZ57/Capstone_Project/assets/154120290/c48bd34c-0257-4c55-8af7-cc172ceefe48)
 
 #### State Variables:
 
@@ -318,6 +314,11 @@ This repository details the process of developing and deploying a cryptocurrency
 - **Normalization:** Scale data for consistent input.
 - **SMOTE:** Balance the dataset by oversampling the minority class.
 - **Random Undersampling and Oversampling.**
+  
+### Balanced Distribution 
+![class_distributions_balanced](https://github.com/TFITZ57/Capstone_Project/assets/154120290/4b723b4e-0ce5-45eb-a914-d6a50bde3afb)
+### Initial Distribution of Classes 
+![class_distributions_initial](https://github.com/TFITZ57/Capstone_Project/assets/154120290/c48bd34c-0257-4c55-8af7-cc172ceefe48)
 
 #### c. Feature Engineering
 - **Creation:** Generate new features to improve model performance.
