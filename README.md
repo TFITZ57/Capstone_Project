@@ -505,4 +505,6 @@ _All phases will be worked on concurrently. Each member will have a speaking par
 | Presentation Preparation   | 2    |
 | GitHub Report/Update       | 3    |
 
+### Project 3: Cryptocurrency Trading Algorithm Model Slide Presentation: https://docs.google.com/presentation/d/1AYsC4beDoMEDzC4bs5Ff2VgdRm7iFuYE/edit#slide=id.p1
+
 ### Project 3: Cryptocurrency Trading Algorithm Model Proposal: https://docs.google.com/document/d/1FoKmY_MA145YLXBN9Ot4ItV62mT_-kewTpmTO9eXahc/edit#heading=h.z5z7j71mgzxq
