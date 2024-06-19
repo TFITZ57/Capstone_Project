@@ -485,6 +485,7 @@ _All phases will be worked on concurrently. Each member will have a speaking par
   - Review all deliverables and make final edits.
   - Assigned to: All team members
 
+
 ### Updated Resource Allocation
 
 | Resource            | Allocation (%) |
